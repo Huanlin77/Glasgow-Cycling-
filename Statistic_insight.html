@@ -4,30 +4,22 @@
 <meta charset="UTF-8">
 <title>Cycling Statistic Dashboard</title>
 <style>
-    /* CSS section: controls how your page looks */
+
     body {
       font-family: 'Arial', sans-serif;
-      /* Sets default font for entire page */
       margin:40px;
-      /* Adds space around the page (top, bottom, left, right) */
       background-color: rgb(214, 223, 214);
-      /* Page background color */
       color: #365a4f;
-      /* Default text color (dark gray) */
     }
 
     .header {
       display: flex;
-      /* Uses Flexbox layout for header */
       align-items: center;
-      /* Centers the main title */
       justify-content: center;
       gap: 30px;
-      /* Space between title and images */
       font-size:24px;
-      /* Text size */
       color: #2c3e50;
-      /* Dark blue-gray color for title */
+
     }
 
     .cycling-gif-left {
@@ -42,7 +34,6 @@
 
     .cycling-gif-left:hover {
       transform: scale(1.2);
-      /* Slight zoom effect on hover */
     }
 
     .cycling-gif-right{
@@ -56,95 +47,60 @@
 
     .cycling-gif-right:hover {
       transform: scale(1.2);
-      /* Slight zoom effect on hover */
     }
 
     .intro {
       max-width: 1200px;
-      
       margin: 20px auto;
-
       margin-bottom: 30px;
-      /* Space below intro text */
       font-size:18px;
-      /* Text size */
       line-height: 1.5;
-      /* Space between lines → improves readability */
     }
 
     .graphs {
       display: flex;
-      /* Uses Flexbox layout (important for arranging graphs) */
       flex-wrap: wrap;
-      /* Allows items to go to next line if not enough space */
       justify-content: space-around;
-      /* Distributes graphs evenly with space around them */
       gap: 30 px;
-      /* Space between graph elements (⚠️ small bug: should be '30px' without space) */
     }
 
     .graph {
       flex: 1 1 45%;
-      /* Each graph takes ~45% width → 2 graphs per row */
       text-align: center;
-      /* Centers content inside each graph box */
       background-color: #fff;
-      /* White background for graph card */
       padding: 15px;
-      /* Space inside the box */
       border-radius: 16px;
-      /* Rounded corners */
-
       box-shadow: 0 4px 16 px (0,0,0,0.1);
-      /* Shadow effect (⚠️ bug: '8 px' should be '8px') */
     }
 
     .graph img{
       max-width: 100%;
-      /* Image will not exceed container width */
-
       height: auto;
-      /* Keeps correct proportions when resizing */
     }
 
     .caption{
       text-align: left ;
-      
       margin-top: 10px;
-      /* Space above caption */
-
       max-width: 90%;
-
       font-size: 15px;
-      /* Smaller text for captions */
-
       line-height: 1.5;
-
       color: #1b1b1b;
-      /* Medium gray color */
     }
 
     .caption3{
       margin: 15px auto;
       text-align: left ; 
       margin-top: 10px;
-      /* Space above caption */
-
       max-width: 1000px;
-
       font-size: 15px;
-      /* Smaller text for captions */
-
       line-height: 1.5;
-
       color: #1b1b1b;
-      /* Medium gray color */
     }
 
     .data-source {
       position: fixed;
-      bottom: 10px;              /* distance from bottom */
-      right: 40px;               /* distance from right */
+      bottom: 10px;              
+      right: 40px;             
 
       background-color: #ffffff00;
       padding: 8px 12px;
@@ -160,7 +116,6 @@
 </head>
 
 <body>
-<!-- Everything inside body is visible on the webpage -->
 
 <div class="header">
     <img src="Pictures/bikegif.gif" class="cycling-gif-left">
@@ -183,8 +138,6 @@
         <!-- First graph card -->
 
         <img src="Pictures/graph1.png" alt="Graph 1">
-        <!-- Displays image file "graph1.png"
-             'alt' text appears if image fails to load -->
 
         <div class="caption">This graph illustrates the monthly distribution of cycling activity per station, highlighting variations throughout the year.
           Glasgow recorded an average of 156 daily cyclists per station across 127 monitored stations. 
@@ -193,14 +146,12 @@
           - Winter months experienced lower cycling activity overall, but a relatively higher number of active stations.<br>
           - Spring and early summer show increased cyclist counts per station, aligning with higher outdoor activity and favorable weather conditions.
         </div>
-        <!-- Caption describing graph -->
     </div>
 
     <div class="graph">
         <!-- Second graph card -->
 
         <img src="Pictures/graph2.png" alt="Graph 2">
-        <!-- Displays second graph image -->
 
         <div class="caption">The pie chart illustrates taht the cycling activity is relatively evenly distributed across all seven days.
           While weekdays show slightly higher levels of cycling activity compared to weekends, the difference is not substantial, indicating consistent usage. 
@@ -214,7 +165,6 @@
              inline style: makes it take 90% width (bigger than others) -->
 
         <img src="Pictures/graph3.png" alt="Graph 3">
-        <!-- Displays third graph -->
 
         <div class="caption3"> Glasgow is well known for its rainy and windy climate. 
           This scatter plot explores the relationship between sunlight hours and cycling activity across the four seasons.
@@ -232,9 +182,9 @@
     </div>
 
 </div>
-<!-- End of graph container -->
+
 
 </body>
 </html>
-<!-- End of HTML document -->
+
 
